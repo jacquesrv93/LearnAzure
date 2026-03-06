@@ -22,7 +22,7 @@ EOF
 # Write a file system to the partition.
 #  ext4 creates an ext4 filesystem.
 #  /dev/sdb1 is the device name.
-sudo mkfs -t ext4 /dev/sdc1
+sudo mkfs -t ext4 /dev/sdb1
 
 # Create the /uploads directory, which we'll use as our mount point.
 sudo mkdir /uploads
@@ -41,3 +41,4 @@ echo "UUID=${UUID}    /uploads    ext4    defaults,nofail    1    2" | sudo tee 
 # Refresh the mount points.
 
 sudo mount -a
+
